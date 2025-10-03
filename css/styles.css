@@ -907,7 +907,7 @@ button {
     flex-direction: row; /* поле і кнопка в ряд */
   }
   .footer-input {
-    /* width: 264px; */
+    width: auto;
   }
   .footer-title {
     text-align: left;
