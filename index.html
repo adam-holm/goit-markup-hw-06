@@ -52,6 +52,89 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" type="button">
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-navigation">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-item">
+                <a class="mobile-link active" href="./index.html">Studio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-link" href="./contacts.html">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-contacts">
+            <a class="menu-phone" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+            <a class="menu-email" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </address>
+          <div class="mobile-menu-socials">
+            <ul class="mobile-menu-socials-list">
+              <li class="social-item">
+                <a
+                  href="https://instagram.com/"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://facebook.com/"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  href="https://linkedin.com/"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -62,7 +145,7 @@
         </div>
       </section>
       <section class="features">
-        <div class="container">
+        <div class="features-container">
           <h2 class="visually-hidden">Our Services Section</h2>
           <ul class="features-list">
             <li class="features-item">
@@ -372,7 +455,7 @@
         </div>
       </section>
       <section class="portfolio">
-        <div class="container">
+        <div class="porfolio-container">
           <h2 class="title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
@@ -494,7 +577,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="footer-container">
         <!-- Лого та опис компанії -->
         <div class="footer-logo-wrapper">
           <a href="./index.html" class="footer-logo">
@@ -583,7 +666,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop is-open hidden">
       <div class="modal">
         <button class="modal-close-button" type="button">
           <svg class="close-icon" width="8" height="8">
