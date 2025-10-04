@@ -208,6 +208,14 @@ button {
   padding-bottom: 72px;
   text-align: center;
   margin: 0 auto;
+
+  @media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.6),
+        rgba(46, 47, 66, 0.6)
+      ),
+      url("../images/hero-bg2-2x.jpg");
+  }
 }
 .hero-title {
   font-weight: 700;
@@ -254,6 +262,14 @@ button {
     padding-top: 112px;
     padding-bottom: 112px;
     max-width: 768px;
+    @media screen and (min-resolution: 2x),
+      (-webkit-min-device-pixel-ratio: 2) {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-bg2x.jpg");
+    }
   }
   .hero-title {
     font-size: 56px;
@@ -277,6 +293,14 @@ button {
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
+    @media screen and (min-resolution: 2x),
+      (-webkit-min-device-pixel-ratio: 2) {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero2x.jpg");
+    }
   }
   .hero-title {
     margin-bottom: 48px;
@@ -731,15 +755,13 @@ button {
 .footer .container {
   display: flex;
   flex-wrap: wrap; /* блоки будуть переноситися */
-  justify-content: center;
+  /* justify-content: center; */
   /* align-items: baseline; */
 }
 
 .footer-logo-wrapper {
   /* width: 288px; */
-  padding-left: 16px;
-  padding-right: 16px;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   text-align: center;
   margin: 0 auto;
@@ -752,10 +774,10 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-
+  /* text-align: center; */
   color: #4d5ae5;
   margin-bottom: 16px;
-  display: inline-block;
+  display: block;
 }
 
 .footer-logo-studio {
@@ -774,6 +796,7 @@ button {
   margin-top: 72px;
   flex-direction: column; /* вертикальне розташування */
   align-items: center; /* по центру по горизонталі */
+  justify-content: center;
 }
 .footer-title {
   font-weight: 500;
@@ -800,6 +823,7 @@ button {
 .footer-subscribe-wrapper {
   margin-top: 72px;
   text-align: center;
+  justify-content: center;
 }
 .footer-form {
   display: flex;
@@ -858,16 +882,29 @@ button {
 @media screen and (min-width: 768px) {
   .footer-logo-wrapper {
     margin-top: 0;
-    margin-right: 120px;
+    margin-right: 24px;
     margin-bottom: 72px;
+    margin-left: 0;
+    text-align: left;
+  }
+  .footer-logo {
+    text-align: left;
+  }
+  .footer-title {
+    text-align: left;
   }
   .footer-social-wrapper {
     margin-top: 0;
-
+    text-align: left;
     flex-direction: column; /* горизонтальне розташування */
+    display: block;
   }
   .footer-subscribe-wrapper {
     margin-top: 0;
+  }
+  .footer-form {
+    display: flex;
+    flex-direction: row; /* поле і кнопка в ряд */
   }
 }
 
@@ -890,7 +927,7 @@ button {
     margin-right: 120px;
     margin-top: 0;
     /* width: auto; */
-    margin-left: 156px;
+    /* margin-left: 156px; */
     text-align: left;
     /* flex: 0 0 264px; */
   }
